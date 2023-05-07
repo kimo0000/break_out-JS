@@ -1,0 +1,71 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica;
+}
+
+.container {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#score {
+    color: #f50;
+}
+
+#game {
+    background-color: #be1919;
+    color: #fff;
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.container .breakout {
+    width: 455px;
+    height: 300px;
+    border: 2px solid #000;
+    position: relative;
+    padding: 10px;
+}
+
+.block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: blue;
+}
+
+.user {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: red;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+    border-radius: 50%;
+}
